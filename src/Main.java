@@ -9,9 +9,6 @@ public class Main {
         int f = 3; // 3
         int g = 2; // 4
 
-
-
-
 //        System.out.println("listaDeVarsteAngajati[0]: " + listaDeVarsteAngajati[0]);
 //        System.out.println("listaDeVarsteAngajati[1]: " + listaDeVarsteAngajati[1]);
 //        System.out.println("listaDeVarsteAngajati[2]: " + listaDeVarsteAngajati[2]);
@@ -34,16 +31,27 @@ public class Main {
 
 //        System.out.println(listaNume[0]);
 
-
-
+        Contabil contabil2 = new Contabil();
+        contabil2.setMin(-1);
+        contabil2.setMax(3);
 
         int listaDeVarsteAngajati[] = {22, 2, 1, 50, 51, -3, 53, 54, 55};
 
-
-        Contabil contabil = new Contabil(listaDeVarsteAngajati);
-
+        Contabil contabil = new Contabil();
+        contabil.setNumere(new int[]{22, 2, 1, 50, 51, -3, 53, 54, 55});
 
         System.out.println("Min: " + contabil.calculeazaMinim());
         System.out.println("Max: " + contabil.calculeazaMax());
+
+        int[][] val = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+        for(int i = 0; i < val.length; i++) {  // parcurge liniile
+            for (int j = 0; j < val[i].length; j++) {  // parcurge coloanele
+                System.out.print(val[i][j] + " ");
+            }
+
+            System.out.println();
+        }
+
     }
 }

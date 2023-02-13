@@ -1,12 +1,17 @@
 public class Contabil {
 
-    int numere[] = new int[20];
+    int numere[];
 
     int min;
     int max;
 
-    public Contabil(int value[]) {
-        numere = value;
+    public Contabil() {
+
+    }
+
+    public Contabil(int min, int max) {
+        this.min = min;
+        this.max = max;
     }
 
     public void setNumere(int value[]) {
@@ -15,6 +20,22 @@ public class Contabil {
 
     public int[] getNumere() {
         return numere;
+    }
+
+    public int getMin() {
+        return min;
+    }
+
+    public void setMin(int min) {
+        this.min = min;
+    }
+
+    public int getMax() {
+        return max;
+    }
+
+    public void setMax(int max) {
+        this.max = max;
     }
 
     public int calculeazaMinim() {
