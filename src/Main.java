@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,10 +19,10 @@ public class Main {
 //        System.out.println("Mijloc element: " + listaDeVarsteAngajati[listaDeVarsteAngajati.length / 2]);  // listaDeVarsteAngajati[2]
 //        System.out.println("Ultimul element: " + listaDeVarsteAngajati[listaDeVarsteAngajati.length - 1]);  // listaDeVarsteAngajati[2]
 
-        String listaNume[] = new String[6];
-        listaNume[0] = "Ion";
-        listaNume[1] = "Vasile";
-        listaNume[2] = "Andrei";
+//        String listaNume[] = new String[6];
+//        listaNume[0] = "Ion";
+//        listaNume[1] = "Vasile";
+//        listaNume[2] = "Andrei";
 
 
 //        System.out.println("listaNume[0]: " + listaNume[0]);
@@ -31,27 +32,44 @@ public class Main {
 
 //        System.out.println(listaNume[0]);
 
-        Contabil contabil2 = new Contabil();
-        contabil2.setMin(-1);
-        contabil2.setMax(3);
+//        Contabil contabil2 = new Contabil();
+//        contabil2.setMin(-1);
+//        contabil2.setMax(3);
+//
+//        int listaDeVarsteAngajati[] = {22, 2, 1, 50, 51, -3, 53, 54, 55};
+//
+//        Contabil contabil = new Contabil();
+//        contabil.setNumere(new int[]{22, 2, 1, 50, 51, -3, 53, 54, 55});
+//
+//        System.out.println("Min: " + contabil.calculeazaMinim());
+//        System.out.println("Max: " + contabil.calculeazaMax());
+//
+//        int[][] val = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//
+//        for(int i = 0; i < val.length; i++) {  // parcurge liniile
+//            for (int j = 0; j < val[i].length; j++) {  // parcurge coloanele
+//                System.out.print(val[i][j] + " ");
+//            }
+//
+//            System.out.println();
+//        }
 
-        int listaDeVarsteAngajati[] = {22, 2, 1, 50, 51, -3, 53, 54, 55};
+//        MyService myService = new MyService();
+//        System.out.println(myService.myLogic());
+//
+//
+//        eu e = new eu();
+//        e.doWork();
+//
+//        eu e1 = new tu();
+//        e1.doWork();
 
-        Contabil contabil = new Contabil();
-        contabil.setNumere(new int[]{22, 2, 1, 50, 51, -3, 53, 54, 55});
+        eu eu3 = new tu();
 
-        System.out.println("Min: " + contabil.calculeazaMinim());
-        System.out.println("Max: " + contabil.calculeazaMax());
+        Set<String> set = eu3.doWork();  // assume sorted
 
-        int[][] val = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-
-        for(int i = 0; i < val.length; i++) {  // parcurge liniile
-            for (int j = 0; j < val[i].length; j++) {  // parcurge coloanele
-                System.out.print(val[i][j] + " ");
-            }
-
-            System.out.println();
-        }
+        // sort
+         set.forEach(System.out::println);
 
     }
 }
